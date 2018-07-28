@@ -1,21 +1,3 @@
-# React quickstart
+# BikeGuyBD.com
 
-**Installed**
-
-- Bootstrap
-- Axios
-- React Router
-- Node Sass
-
-**Start Project**
-```bash
-npm start
-```
-
-<br />
-
-**Build Project**
-```bash
-npm run build
-```
-
+https://bikeguybd.com/
