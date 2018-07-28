@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,700");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+body {
+  background: url(../images/pattern.svg);
+}
+
+@font-face {
+  font-family: 'bgFont';
+  src: url("../fonts/daggersquare_oblique-webfont.woff2") format("woff2"), url("../fonts/daggersquare_oblique-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bgFont-soja';
+  src: url("../fonts/daggersquare-webfont.woff2") format("woff2"), url("../fonts/daggersquare-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+img {
+  max-width: 100%;
+}
+
+.hero-area {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: url(../images/cover.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-area:before {
+  position: absolute;
+  content: '';
+  background: url(../images/overlays/09.png);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 576px) {
+  .hero-area {
+    background-image: none;
+    background: #222;
+    height: 280px;
+  }
+}
+
+.hero-area .hero-contents {
+  z-index: 999;
+}
+
+@media screen and (max-width: 576px) {
+  .hero-area .hero-contents {
+    text-align: left !important;
+  }
+}
+
+.hero-area .bikeguy-logo {
+  font-family: 'bgFont';
+  font-size: 150px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media screen and (max-width: 576px) {
+  .hero-area .bikeguy-logo {
+    font-size: 55px;
+  }
+}
+
+.hero-area .tagline {
+  font-family: Quicksand;
+  font-size: 45px;
+  color: #ffbb00;
+}
+
+@media screen and (max-width: 576px) {
+  .hero-area .tagline {
+    font-size: 25px;
+  }
+}
+
+.service-container {
+  background: #FFF;
+}
+
+.service {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.service .service-poster {
+  width: 100%;
+  height: 100%;
+  background: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+  .service .service-poster {
+    height: 160px;
+  }
+}
+
+.service .service-title {
+  font-family: 'bgFont-soja';
+  font-size: 32px;
+  color: #333;
+}
+
+.service .service-title .bg {
+  font-family: 'bgFont';
+  color: #ffbb00;
+}
+
+.service .service-right {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+@media screen and (max-width: 576px) {
+  .service .service-left {
+    padding-right: 0;
+  }
+}
+
+.service .service-image {
+  height: 100px;
+  width: 100px;
+}
+
+.btn-yellow {
+  background-color: #ffbb00;
+  border-color: #ffbb00;
+  border-radius: 0;
+  transition: 300ms;
+  font-size: 12px;
+}
+
+.btn-yellow:focus {
+  outline: none;
+}
+
+.btn-yellow:hover {
+  background: #ffbb00;
+  border-color: #ffbb00;
+  opacity: .8;
+}

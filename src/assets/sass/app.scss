@@ -1,0 +1,24 @@
+$yellow: #ffbb00;
+body{
+    background: url(../images/pattern.svg);
+}
+@import 'fonts';
+@import 'header';
+@import 'services';
+
+
+.btn-yellow {
+    background-color: $yellow;
+    border-color: $yellow;
+    border-radius: 0;
+    transition: 300ms;
+    font-size: 12px;
+    &:focus{
+        outline: none;
+    }
+    &:hover{
+        background: $yellow;
+        border-color: $yellow;
+        opacity: .8;
+    }
+}
